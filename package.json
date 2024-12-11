@@ -1,12 +1,21 @@
 {
   "name": "moment-utc-time",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": false,
+  "main": "index.ts",
+  "description": "A lightweight package addition to momentjs which can parse any time (not date, time only) into utc and opposite from utc to your local time.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertArakelyan/moment-utc-time.git"
+  },
+  "keywords": ["moment", "utc", "time", "date", "timezone"],
+  "homepage": "https://github.com/AlbertArakelyan/moment-utc-time#readme",
+  "bugs": {
+    "url": "https://github.com/AlbertArakelyan/moment-utc-time/issues"
+  },
+  "author": "Albert Arakelyan",
+  "license": "MIT"
 }
