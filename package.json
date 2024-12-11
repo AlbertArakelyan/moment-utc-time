@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/AlbertArakelyan/moment-utc-time.git"
   },
-  "keywords": ["moment", "utc", "time", "date", "timezone"],
+  "keywords": ["moment", "momentjs", "utc", "time", "date", "timezone"],
   "homepage": "https://github.com/AlbertArakelyan/moment-utc-time#readme",
   "bugs": {
     "url": "https://github.com/AlbertArakelyan/moment-utc-time/issues"
