@@ -20,13 +20,13 @@ export const convertTimeToUtc = (timeValue: string) => {
   return moment(new Date().setHours(...scheduledTimeHours, 0)).utc().format('HH:mm:ss');
 };
 
-  /**
-   * Converts a given UTC time string to a local time string.
-   *
-   * @param receivedTime - A string representing the UTC time in 'HH:mm:ss' format.
-   * @returns A string representing the corresponding time in the local timezone
-   *          in 'HH:mm:ss' format, or null if the input is invalid.
-   */
+/**
+ * Converts a given UTC time string to a local time string.
+ *
+ * @param receivedTime - A string representing the UTC time in 'HH:mm:ss' format.
+ * @returns A string representing the corresponding time in the local timezone
+ *          in 'HH:mm:ss' format, or null if the input is invalid.
+ */
 export const convertUtcToTime = (receivedTime: string) => {
   if (!receivedTime) {
     return null;
