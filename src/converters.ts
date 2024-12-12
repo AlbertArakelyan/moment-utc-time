@@ -1,5 +1,7 @@
 import moment from 'moment';
 
+import { TIME_FORMAT, TIME_REGEX } from './constants';
+
 /**
  * Converts a given local time string to a UTC time string.
  *
@@ -8,7 +10,7 @@ import moment from 'moment';
  *          or null if the input is invalid.
  */
 export const convertTimeToUtc = (timeValue: string) => {
-  if (!timeValue) {
+  if (!timeValue || !TIME_REGEX.test(timeValue)) {
     return null;
   }
   
@@ -17,7 +19,7 @@ export const convertTimeToUtc = (timeValue: string) => {
     .map((time) => Number(time)) as [number, number, number];
 
   // Convert local date to UTC
-  return moment(new Date().setHours(...scheduledTimeHours, 0)).utc().format('HH:mm:ss');
+  return moment(new Date().setHours(...scheduledTimeHours, 0)).utc().format(TIME_FORMAT);
 };
 
 /**
@@ -28,7 +30,7 @@ export const convertTimeToUtc = (timeValue: string) => {
  *          in 'HH:mm:ss' format, or null if the input is invalid.
  */
 export const convertUtcToTime = (receivedTime: string) => {
-  if (!receivedTime) {
+  if (!receivedTime || !TIME_REGEX.test(receivedTime)) {
     return null;
   }
   

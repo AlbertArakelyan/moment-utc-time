@@ -7,7 +7,9 @@
   "types": "dist/index.d.ts",
   "description": "A lightweight package addition to momentjs which can parse any time (not date, time only) into utc and opposite from utc to your local time.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
