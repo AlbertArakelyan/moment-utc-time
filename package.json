@@ -7,11 +7,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "moment": "^2.30.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlbertArakelyan/moment-utc-time.git"
   },
-  "keywords": ["moment", "momentjs", "utc", "time", "date", "timezone", "timezones"],
+  "keywords": [
+    "moment",
+    "momentjs",
+    "utc",
+    "time",
+    "date",
+    "timezone",
+    "timezones"
+  ],
   "homepage": "https://github.com/AlbertArakelyan/moment-utc-time#readme",
   "bugs": {
     "url": "https://github.com/AlbertArakelyan/moment-utc-time/issues"
