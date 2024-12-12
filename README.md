@@ -58,7 +58,6 @@ Got ideas or found a bug? We appreciate your contributions! Here's how you can g
 
 Licensed under the MIT License.
 
-
 ---
 
 Made with ❤️ by [Albert Arakelyan](https://github.com/AlbertArakelyan) <br>
