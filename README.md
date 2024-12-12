@@ -30,7 +30,7 @@ Checkout [`moment` documentation](https://momentjs.com/) for more information.
 - Converts a given UTC time string to a local time string (without date)
 
 ## 💡 Usage
-It converts time (of format `HH:mm:ss`) into **UTC** fromat and vice versa without whole date string, so you don't need whole `DD:MM:YYYY HH:mm:ss` like strings for converting it's enough just to provide full time string in `HH:mm:ss` format, e.g. **`08:00:00`**, which will be converted into **`04:00:00`** for **GMT+4** timezone.
+It converts time (of format `HH:mm:ss`) into **UTC** fromat and vice versa without whole date string, so you don't need whole `DD:MM:YYYY HH:mm:ss` like strings for converting, it's enough just to provide full time string in `HH:mm:ss` format, e.g. **`08:00:00`**, which will be converted into **`04:00:00`** for **GMT+4** timezone.
 ```js
 import { convertTimeToUtc, convertUtcToTime } from 'moment-utc-time';
 
